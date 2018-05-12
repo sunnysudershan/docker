@@ -2,7 +2,7 @@
 FROM centos
 
 #Docker file author
-MAINTAINER Satheesh Challa <satheesh.challa@polyglotit.com>
+MAINTAINER Sunny Rampalli <sunnysudershan@gmail.com>
 
 #Install Apache server package
 RUN yum install -y httpd
@@ -12,7 +12,6 @@ RUN yum install -y git
 
 #Obtain git clone
 RUN git clone https://github.com/demoglot/html-samples-food.git /var/www/html
-
 
 # Run the httpd server
 CMD ["httpd", "-DFOREGROUND"]
